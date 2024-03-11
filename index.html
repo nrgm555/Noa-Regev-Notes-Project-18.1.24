@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Board</title>
+</head>
+<body>
+ <div id="container">
+    
+    <h1>My Task Board</h1>
+   
+    <div id="taskBackground"> 
+        <form id="taskForm">
+        <label for="task">My Task:</label> 
+        <input type="text" id="taskInput" placeholder="Enter a task" required>
+        <label for="date">Completion Date:</label> 
+        <input type="date" id="dateInput" required> 
+        <label for="time">Completion Hour:</label> 
+        <input type="time" id="timeInput" required>
+        <button type="button" class="btn btn-info" id="clearFormBtn">Clear Form</button>
+        <button type="button" class="btn btn-info" id="saveTaskBtn">Save Task</button>
+        </form>
+    </div>
+
+ <div id="taskList">
+    
+ </div>
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

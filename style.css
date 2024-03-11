@@ -1,0 +1,65 @@
+body {font-family: arial; text-align: center; background-image: url(images/board.jpg); 
+    background-size: cover;}
+h1 {font-family: Comic Sans MS; font-style: italic; margin-left: auto; 
+    margin-right: auto; color: white; font-size: 280%;}
+div {margin-left: auto; margin-right: auto; 
+}
+
+#taskBackground {
+    background-image: url(images/notebook.jpg); 
+    background-size: auto;
+    font-size: x-large;
+    padding-top: 1%;
+    margin-left: 2%; margin-right: 2%;
+}
+
+#taskList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*NOTES FROM HERE*/
+
+.task-note {
+    position: relative;
+    background-image: url('https://pics.clipartpng.com/midle/Sticky_Note_Yellow_PNG_Clip_Art-2381.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 210px;
+    height: 210px;
+    margin: 10px;
+    padding: 20px;
+    color: #333;
+    overflow-y: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.task-note:hover .delete-button {
+    display: block;
+}
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+}
+
+.date-time {             /*WHAT*/
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 12px;
+    color: #555;
+}
+
+/*THE STRIKE X*/
+
+.strikethrough {
+    text-decoration: line-through;
+}
